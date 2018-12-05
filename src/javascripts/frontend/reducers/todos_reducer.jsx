@@ -8,7 +8,7 @@ const todosReducer = (state = {}, action) => {
     case RECEIVE_TODO:
       return Object.assign({}, state, {[action.todo.id]: action.todo})
     case REMOVE_TODO:
-      let newState = Obeject.assign({}, state);
+      let newState = Object.assign({}, state);
       delete newState[action.todoId];
       return newState;
     default:
