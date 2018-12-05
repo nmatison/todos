@@ -1,5 +1,6 @@
 import React from 'react';
 import { TodoListItem } from './todo_list_item';
+import TodoForm from './todo_form';
 
 class TodoList extends React.Component {
 
@@ -10,7 +11,7 @@ class TodoList extends React.Component {
         key={`todo-list-item${todo.id}`}
         todo={todo}
         receiveTodo={receiveTodo} />
-    )
+      )
     );
 
     return (
@@ -19,7 +20,7 @@ class TodoList extends React.Component {
         <li>bye</li>
          {todoItems}
        </ul>
-       {/* <TodoForm receiveTodo={receiveTodo} /> */}
+       <TodoForm receiveTodo={receiveTodo} />
     </div>
     )
   }
