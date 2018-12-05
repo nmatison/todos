@@ -2,7 +2,7 @@ var path = require("path");
 
 module.exports = {
   context: __dirname,
-  entry: "./frontend/todos.jsx",
+  entry: "./public/todos.jsx",
   output: {
     path: path.resolve(__dirname),
     filename: "bundle.js"
@@ -14,7 +14,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: "babel-loader",
         query: {
-          presets: ["env", "react"]
+          presets: ['@babel/env', '@babel/react']
         }
       }
     ]
